@@ -147,14 +147,14 @@ p {
     margin-bottom: 40px;
   }
   .skils-balao {
-    width: 100%;
+    width: 95%;
     display: flex;
     align-items: center;
     flex-direction: column;
     background: #fff;
     box-shadow: 0px 10px 10px #7b0489;
     border-radius: 30px;
-    margin-left: 200px;
+    margin-left: 220px;
     margin-top: -70px;
     height: 400px;
   }
@@ -166,7 +166,7 @@ p {
   .skills ul li {
     display: inline-block;
     margin-bottom: 30px;
-    margin-left: 35px;
+    margin-left: 25px;
   }
   .introducao p {
     font-size: 60px;
@@ -228,6 +228,11 @@ p {
 [data-anime] {
   opacity: 0;
   transition: 1.5s;
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
 }
 
 [data-anime='top'] {
