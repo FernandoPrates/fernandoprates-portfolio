@@ -21,7 +21,7 @@ p {
 }
 .sobre {
   width: 110%;
-  height: 1200px; /*Tamanho*/
+  height: 1250px; /*Tamanho*/
   background: url('../img/sobre responsivo.png') no-repeat center;
   background-size: cover;
   padding-top: 8px;
