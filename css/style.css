@@ -59,12 +59,10 @@ p {
 }
 .PC {
   margin-top: -650px;
-  margin-left: 10px;
+  margin-left: -10px;
   max-width: 600px;
 }
-.pc-fundo {
-  background: #0a0b0b;
-}
+
 .fotofer {
   margin-top: 880px;
   margin-left: 65px;
