@@ -12,7 +12,7 @@ function toggleMenu() {
 }
 
 //Text que somente escreve
-var texto = "I'm Front End Developer Jr.";
+var texto = "I'm Front End Developer.";
 var result;
 
 var count = 0;
@@ -36,13 +36,8 @@ window.onload = digitar;
 var div = document.getElementById('log');
 var textos = [
   'Analista de Sistemas Front end.',
-  'Programador JavaScript.',
-  'UI Design.',
-  'Desenvolvedor Front end React JS.',
-  'Programador Web.',
-  'Trainee  React Native.',
-  'Trainee Node Js.',
   'Web Design.',
+  'Programador Web.',
 ];
 
 function escrever(str, done) {
