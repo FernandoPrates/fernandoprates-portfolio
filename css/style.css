@@ -80,18 +80,20 @@ p {
   color: #fff;
 }
 .skils-balao {
-  width: 170%;
+  width: 150%;
   display: flex;
   align-items: center;
   flex-direction: column;
   background: #fff;
   box-shadow: none;
   margin-bottom: 100px;
+  margin-left: -135px;
 }
 .skills h1 {
   margin-top: 30px;
   margin-bottom: 50px;
   margin-right: 40px;
+  margin-left: 150px;
 }
 .skills ul li {
   display: inline-block;
@@ -125,8 +127,94 @@ p {
   margin-left: 30px;
   font-family: 'Courier New', Courier;
 }
+/*Imagem Hover*/
+.container-teste {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 3100px;
+}
+.container-teste .card {
+  position: relative;
+  width: 190px;
+  height: 180px;
+  margin: 15px;
+  overflow: hidden;
+  border: none;
+  margin-left: 130px;
+}
+
+.container-teste .card .imgBx,
+.container-teste .card .contentBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container-teste .card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-teste .card .contentBx::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+  transition-delay: 0.5s;
+}
+.container-teste .card:hover .contentBx::before {
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+  transition-delay: 0s;
+}
+.container-teste .card .contentBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-teste .card .contentBx .content {
+  position: relative;
+  padding: 30px;
+  z-index: 1;
+  transition: 0.5s;
+  transform: translateX(-300px);
+  transition-delay: 0s;
+}
+.container-teste .card:hover .contentBx .content {
+  transform: translateX(0px);
+  transition-delay: 0.5s;
+}
+.container-teste .card .contentBx .content h3 {
+  font-size: 10px em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.container-teste .card .contentBx .content p {
+}
 
 @media (min-width: 768px) {
+  .container-teste .card {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin: 15px;
+    overflow: hidden;
+    border: none;
+  }
   .portifolio ul li {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -157,16 +245,16 @@ p {
     margin-bottom: 40px;
   }
   .skils-balao {
-    width: 95%;
+    width: 89%;
     display: flex;
     align-items: center;
     flex-direction: column;
     background: #fff;
     box-shadow: 0px 10px 10px #7b0489;
     border-radius: 30px;
-    margin-left: 220px;
+    margin-left: 55px;
     margin-top: -70px;
-    height: 400px;
+    height: 500px;
   }
   .banner h3 {
     font-size: 1.5em;
@@ -180,11 +268,7 @@ p {
     margin-bottom: 30px;
     margin-left: 35px;
   }
-  .skills ul li {
-    display: inline-block;
-    margin-bottom: 30px;
-    margin-left: 25px;
-  }
+
   .introducao p {
     font-size: 60px;
     line-height: 70px;
