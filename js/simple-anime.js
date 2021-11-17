@@ -185,3 +185,7 @@ function showSlides(n) {
 var d = new Date();
 var n = d.getFullYear();
 document.getElementById('hora').innerHTML = n;
+
+$('.hover').mouseleave(function () {
+  $(this).removeClass('hover');
+});
