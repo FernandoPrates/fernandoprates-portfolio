@@ -405,6 +405,9 @@ figure.snip1256.hover figcaption {
     color: #fff;
     margin-left: -15px;
   }
+  .footer h3 {
+    margin-left: 55px;
+  }
   .copy {
     width: 101%;
     background: #7b0489;
@@ -414,7 +417,41 @@ figure.snip1256.hover figcaption {
     margin-left: -16px;
   }
 }
+.contato {
+  background: #f7f5fa; /* MUDAR A COR*/
+}
 
+.redes-sociais ul {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-top: -80px;
+}
+
+.redes-sociais ul li {
+  position: relative;
+  list-style: none;
+  box-sizing: inherit;
+  margin-top: 100px;
+}
+
+.redes-sociais ul li a {
+  position: relative;
+  display: block;
+  margin: 0 20px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.redes-sociais ul li a:hover {
+  color: #fff;
+  top: -2px;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+}
 [data-anime] {
   opacity: 0;
   transition: 1.5s;
